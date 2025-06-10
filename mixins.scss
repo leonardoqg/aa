@@ -1,0 +1,13 @@
+// Mixins para estilos reutilizáveis
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-setup($columns, $gap-column, $gap-row) {
+  display: grid;
+  grid-template-columns: repeat($columns, auto);
+  column-gap: $gap-column;
+  row-gap: $gap-row;
+}
